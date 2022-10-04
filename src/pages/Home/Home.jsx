@@ -1,5 +1,7 @@
+
 import './home.css'
 import {Header, Posts, Sidebar} from '../../components'
+
 
 const Home = () => {
   return (

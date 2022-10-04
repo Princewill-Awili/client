@@ -1,0 +1,94 @@
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutTitle{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Lora',sans-serif;
+    color:#444;
+    margin-top: 20px;
+}
+
+.aboutInfo{
+    width: 100%;
+    height: calc(100vh - 140px);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://media.zicxa.com/1129101');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover; 
+}
+
+.aboutInfoWrapper{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.ourStory{
+    font-size: 20px;
+    font-family: 'Lora', sans-serif;
+    margin-bottom: 20px;
+}
+
+.aboutInfoTxt{
+    font-family: 'Lora', sans-serif;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;  
+}
+
+.authorWrapper{
+    display: flex;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.authorImg{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.authorTitle{
+    font-family:'Lora',sans-serif;
+    font-size: 16px; 
+}
+
+.authorName{
+    font-family:'Lora',sans-serif;
+    font-weight: bold;
+    color: #444; 
+}
+
+.back{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-right:70% ;
+    margin-top: 10px;
+}
+
+.back>span{
+    margin-left: 10px;
+    
+    font-family:'Lora',sans-serif;
+    cursor: pointer;
+}

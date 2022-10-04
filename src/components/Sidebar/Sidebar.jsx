@@ -1,20 +1,33 @@
+import { useContext } from 'react';
+
 import './sidebar.css'
 
 import {FaFacebookSquare,FaTwitterSquare,FaInstagramSquare} from 'react-icons/fa';
-import {BsPinterest} from 'react-icons/bs'
+import {BsPinterest} from 'react-icons/bs';
+
+import { states } from '../../context';
 
 
 const Sidebar = () => {
+
+  const {user} = useContext(states);
+
   return (
     <div className='sidebar'>
 
-      <div className="sidebarItem">
-          <span className="sidebarTitle">ABOUT ME</span>
-          <img src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-suliman-sallehi-1704488.jpg&fm=jpg" alt="mypic" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum ad assumenda est quis? A, animi culpa quas.
-          </p>
-      </div>
+      {
+        user && (
+          <div className="sidebarItem">
+            <span className="sidebarTitle">ABOUT ME</span>
+            <img src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?cs=srgb&dl=pexels-suliman-sallehi-1704488.jpg&fm=jpg" alt="mypic" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum ad assumenda est quis? A, animi culpa quas.
+            </p>
+          </div>
+        )
+      }
+
+      
 
       <div className="sidebarItem">
           <span className="sidebarTitle">CATEGORIES</span>

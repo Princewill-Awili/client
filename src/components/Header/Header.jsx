@@ -1,15 +1,17 @@
-import './header.css';
+import "./header.css";
 
-const Header = () => {
+export default function Header() {
   return (
-    <div className='header'>
-        <div className="headerTitles">
-            <span className="headerTitlesSm">Designed with React</span>
-            <span className="headerTitlesLg">Blog</span>
-        </div>
-        <img src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bg" className="headerImg" />
+    <div className="header">
+      <div className="headerTitles">
+        <span className="headerTitleSm">Built using React</span>
+        <span className="headerTitleLg">Blogs & Stories</span>
+      </div>
+      <img
+        className="headerImg"
+        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt=""
+      />
     </div>
-  )
+  );
 }
-
-export default Header
